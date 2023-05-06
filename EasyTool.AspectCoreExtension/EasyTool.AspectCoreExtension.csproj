@@ -9,7 +9,7 @@
 		<RepositoryUrl>https://github.com/super-xry/EasyTool</RepositoryUrl>
 		<Authors>RY</Authors>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
-		<Version>1.0.0.1</Version>
+		<Version>1.0.0.2</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
