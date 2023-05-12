@@ -1,5 +1,5 @@
-﻿using System.Diagnostics;
-using AspectCore.DynamicProxy;
+﻿using AspectCore.DynamicProxy;
+using System.Diagnostics;
 
 namespace EasyTool.AspectCoreExtension.Attributes
 {
@@ -12,10 +12,8 @@ namespace EasyTool.AspectCoreExtension.Attributes
             stopWatch.Start();
             await next(context);
             stopWatch.Stop();
-            var color = Console.ForegroundColor;
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Method: {context.ProxyMethod.Name}, cast: {stopWatch.ElapsedMilliseconds} ms...");
-            Console.ForegroundColor = color;
+
+            Console.WriteLine($"Full name: {context.ProxyMethod.GetType().FullName}, cost time: {stopWatch.ElapsedMilliseconds} ms...");
         }
     }
 }
