@@ -13,7 +13,7 @@ namespace EasyTool.AspectCoreExtension.Attributes
             await next(context);
             stopWatch.Stop();
 
-            Console.WriteLine($"Full name: {context.ProxyMethod.GetType().FullName}, cost time: {stopWatch.ElapsedMilliseconds} ms...");
+            Console.WriteLine($"Type: {context.ImplementationMethod.DeclaringType}, Name: {context.ProxyMethod.Name}, cost time: {stopWatch.ElapsedMilliseconds} ms...");
         }
     }
 }
