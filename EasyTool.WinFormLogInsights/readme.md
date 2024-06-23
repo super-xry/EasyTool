@@ -3,7 +3,7 @@
 
 # Examples: 
 
-![Example 1](../resource/example1.png "Example 1")
+![Example 1](https://github.com/super-xry/EasyTool/blob/main/resouce/example1.png "Example 1")
 
-![Example 2](../resource/example2.png "Example 2")
+![Example 2](https://github.com/super-xry/EasyTool/blob/main/resouce/example2.png "Example 2")
 
