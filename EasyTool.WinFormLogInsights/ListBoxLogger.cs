@@ -45,7 +45,7 @@ namespace EasyTool.WinFormLogInsights
         {
             if (e.Button != MouseButtons.Right) return;
             var index = IndexFromPoint(e.Location);
-            if (index != NoMatches) return;
+            if (index+1 != NoMatches) return;
             ContextMenuStrip.Items["Copy"].Visible = false;
             ContextMenuStrip.Items["Detail"].Visible = false;
         }

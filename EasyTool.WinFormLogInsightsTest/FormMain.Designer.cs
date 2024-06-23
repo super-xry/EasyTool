@@ -49,17 +49,16 @@
             logger.DrawMode = DrawMode.OwnerDrawFixed;
             logger.FormattingEnabled = true;
             logger.ItemHeight = 25;
-            logger.Location = new Point(58, 146);
+            logger.Location = new Point(21, 100);
             logger.Name = "logger";
-            logger.Size = new Size(419, 254);
+            logger.Size = new Size(456, 304);
             logger.TabIndex = 1;
-            logger.MouseDoubleClick += logger_MouseDoubleClick;
             // 
             // FormMain
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(549, 457);
+            ClientSize = new Size(497, 457);
             Controls.Add(logger);
             Controls.Add(btnAddMsg);
             Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 134);

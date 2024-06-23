@@ -15,7 +15,8 @@ namespace EasyTool.WinFormLogInsightsTest
 
         private void btnAddMsg_Click(object sender, EventArgs e)
         {
-            logger.LogInfo("Test...");
+            logger.LogInfo("This is an info style...");
+            logger.LogError("This is an error style...");
         }
 
         private void logger_MouseDoubleClick(object sender, MouseEventArgs e)
