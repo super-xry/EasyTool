@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EasyTool.JsonViewer\EasyTool.JsonViewer.csproj" />
     <ProjectReference Include="..\EasyTool.WinFormLogInsights\EasyTool.WinFormLogInsights.csproj" />
   </ItemGroup>
 

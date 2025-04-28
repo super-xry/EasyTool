@@ -1,4 +1,6 @@
 using EasyTool.WinFormLogInsights;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace EasyTool.WinFormLogInsightsTest
 {
@@ -19,10 +21,10 @@ namespace EasyTool.WinFormLogInsightsTest
             logger.LogError("This is an error style...");
         }
 
-        private void logger_MouseDoubleClick(object sender, MouseEventArgs e)
+        private void btnFormat_Click(object sender, EventArgs e)
         {
-            var item = (CustomListItem)logger.SelectedItem;
-            MessageBox.Show(item.Message);
+            if (string.IsNullOrEmpty(txtRawJson.Text)) return;
+            jsonViewer.JsonData = JsonConvert.DeserializeObject<JObject>(txtRawJson.Text);
         }
     }
 }
